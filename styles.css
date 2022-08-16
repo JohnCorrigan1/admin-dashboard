@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  background-color: rgba(226,232,240,255);
+  background-color: #9ED2C6;
 }
+
+
 
 .container {
     display: grid;
@@ -14,9 +16,10 @@ body {
 
   .sidebar {
     min-width: 10em;
-   
+    position: sticky;
     grid-row: 1/ 3;
-    background-color: aqua;
+    background-color: #54BAB9;
+    box-shadow: 5px 5px 5px -2px #F7ECDE
   }
 
  
@@ -52,10 +55,11 @@ body {
   .header {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: blueviolet;
+    background-color: #F7ECDE;
     grid-column: 2/4;
     grid-row: 1/2;
     align-items: center;
+    box-shadow: 5px 5px 5px -2px;
   }
 
   .logo {
@@ -81,7 +85,9 @@ body {
     border-radius: 10%;
     height: 350px;
     text-align: center;
-    background-color: darkgoldenrod;
+    background-color: #E9DAC1;
+    border-left: solid 1rem #54BAB9;
+    box-shadow: 5px 5px 5px -2px;
   }
 
   .sidebar-right{
@@ -100,8 +106,9 @@ body {
 
   .trending, .announcements{
     padding: 10px;
-    background-color: antiquewhite;
+    background-color: #E9DAC1;
     border-radius: 10%;
+    box-shadow: 5px 5px 5px -2px;
   }
 
 
