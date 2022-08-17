@@ -1,14 +1,16 @@
 body {
   margin: 0;
   background-color: #9ED2C6;
+  height: 100vh;
+  
 }
 
 
 
 .container {
     display: grid;
-    grid-template-columns: 10rem 3fr 25rem;
-    grid-template-rows: 10vh;
+    grid-template-columns: 15rem 3fr 25rem;
+    grid-template-rows: 15vh 85vh;
     height: 100vh;
     text-align: center;
   }
@@ -16,12 +18,19 @@ body {
 
   .sidebar {
     min-width: 10em;
-    position: sticky;
     grid-row: 1/ 3;
-    background-color: #54BAB9;
-    box-shadow: 5px 5px 5px -2px #F7ECDE
+    
+  
+    
+   
   }
-
+  
+  .test {
+    position: sticky;
+    background-color: #54BAB9;
+    box-shadow: 5px 5px 5px -2px #F7ECDE;
+    height: 100vh;
+  }
  
 
   a {
@@ -37,6 +46,10 @@ body {
     justify-content: center;
   }
   
+  .menu{
+    margin-left: 15vw;
+    margin-right: 8vw;
+  }
 
   .menu ul,
   .menu li {
@@ -55,16 +68,56 @@ body {
   .header {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     background-color: #F7ECDE;
     grid-column: 2/4;
     grid-row: 1/2;
     align-items: center;
     box-shadow: 5px 5px 5px -2px;
+    height: auto;
+  }
+
+  input{
+    width: 30vw;
+    border-radius: 1.5em;
+    
+    height: 2em;
+    
+  }
+
+  form{
+    margin-top: 1vh;
+    display: flex;
+    margin-left: 2vw;
+  }
+
+  .name-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name-logo img {
+    margin-left: 2vw;
+    height: 32px;
+  }
+
+  .search {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 1/4;
+    height: 3em;
   }
 
   .logo {
     margin-left: 5vw;
     justify-self: start;
+  }
+
+  button {
+    border-radius: 1.25em;
+    height: 2em;
+    background-color: #54BAB9;
   }
 
   .icon-svg{
@@ -75,15 +128,20 @@ body {
   .projects{
     padding: 3rem;
     display: grid;
-    
+    margin-top: 5px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 3rem;
     
   }
 
+  .projects h2 {
+    position: absolute;
+    top: 14vh;
+  }
+
   .tile{
     border-radius: 10%;
-    height: 350px;
+    height: 200px;
     text-align: center;
     background-color: #E9DAC1;
     border-left: solid 1rem #54BAB9;
@@ -91,7 +149,12 @@ body {
   }
 
   .sidebar-right{
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-right:1rem;
+    padding-left: 1rem;
+    grid-column: 3/4;
+    max-width: 25rem;
   }
 
   .sidebar-right h2 {
@@ -105,11 +168,16 @@ body {
   }
 
   .trending, .announcements{
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     background-color: #E9DAC1;
     border-radius: 10%;
     box-shadow: 5px 5px 5px -2px;
+    height: 32vh;
   }
 
+
+ 
 
  
